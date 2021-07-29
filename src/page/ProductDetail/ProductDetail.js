@@ -31,23 +31,32 @@ const ProductDetail = () => {
 
         }
 
+
+        // add a product was into cart
         const cartDuplicate ={
             id:0,
             idProduct:0,
             quantity: 0,
-            price:0
+            price:0,
+            checked: false,
         }
+
+        // add new product to cart
         const newItemCart ={
                 id:parseInt(Math.floor(Math.random() * 1000)),
                 idProduct:parseInt(id),
                 quantity: parseInt(ItemNumberBuy.value),
-                price:product[0].price
+                price:product[0].price,
+                checked: false,
             }
 
         var boleanDuplicateIdProduct = false;
+        // check product that was in cart true 
+
         Carts.forEach(cart => {
+
             if(cart.idProduct === parseInt(id)){
-                boleanDuplicateIdProduct = true;
+                boleanDuplicateIdProduct = true; 
                 cartDuplicate.id = cart.id;
                 cartDuplicate.idProduct = cart.idProduct;
                 cartDuplicate.quantity = parseInt(cart.quantity) + parseInt(ItemNumberBuy.value);
@@ -58,6 +67,7 @@ const ProductDetail = () => {
                 newItemCart.quantity =   parseInt(ItemNumberBuy.value);
                 newItemCart.price = product[0].price;
             }
+
         })
         console.log('new' ,newItemCart ,cartDuplicate)
         if(boleanDuplicateIdProduct){
