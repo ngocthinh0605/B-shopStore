@@ -41,6 +41,20 @@ export const decrementItemInShoppingCart = (idCart) =>{
     }
 }
 
+export const checkAllItemShoppingCart = (boolean) =>{
+    return{
+        type: ActionTypes.CHECKED_CHECKBOX_PRODUCT_IN_SHOPPINGCART,
+        payload: boolean,
+    }
+}
+
+
+export const checkedItemShoppingcart = (id) =>{
+    return{
+        type: ActionTypes.CHECKED_ITEM_SHOPPINGCART,
+        payload: id,
+    }
+}
 
 
 

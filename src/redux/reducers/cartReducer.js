@@ -5,25 +5,29 @@ const initialState ={
             id:1,
             idProduct:1,
             quantity: 5,
-            price:200
+            price:200,
+            checked: false,
         },
         {
             id:2,
             idProduct:6,
             quantity: 2,
-            price:200
+            price:200,
+            checked: true,
         },
         {
             id:3,
             idProduct:11,
             quantity: 4,
-            price:200
+            price:200,
+            checked: true,
         },
         {
             id:4,
             idProduct:15,
             quantity: 9,
-            price:200
+            price:200,
+            checked: false,
         }
     ]
 }
@@ -65,6 +69,19 @@ export const cartReducer =(state = initialState, {type, payload}) => {
                 ...state,
                 carts: state.carts.map(cart => parseInt(cart.id) === parseInt(payload) ? {...cart, quantity: parseInt(cart.quantity - 1)} : cart)
             }
+
+        case ActionTypes.CHECKED_ITEM_SHOPPINGCART:
+            return{
+                ...state,
+                carts: state.carts.map(cart => parseInt(cart.id) === parseInt(payload) ? {...cart, checked: !cart.checked} : cart)
+            }
+
+        case ActionTypes.CHECKED_CHECKBOX_PRODUCT_IN_SHOPPINGCART:
+        console.log('123')
+        return{
+            ...state,
+            carts: state.carts.map(cart => ({...cart, checked: payload}))
+        }
         default:
             return state;
     }

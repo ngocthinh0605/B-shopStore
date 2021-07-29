@@ -1,7 +1,19 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+import { checkedItemShoppingcart } from '../../redux/actions/productAction'
 
-const ProductInShoppingCart = ({onDelete,product,cart,onDecrement,onIncrement,checkedAll}) => {
+
+const ProductInShoppingCart = ({onDelete,product,cart,onDecrement,onIncrement,}) => {
+
+    const dispatch = useDispatch();
+
+    function handleChecked(id){
+        const unCheckAll = document.querySelector('.shopping__cart-main-checkall input[name = "checkall"]')
+        unCheckAll.checked = false;
+        dispatch(checkedItemShoppingcart(id))
+    }
+   
     return (
         <>
             <div className="shopping__cart-item">
@@ -66,7 +78,7 @@ const ProductInShoppingCart = ({onDelete,product,cart,onDecrement,onIncrement,ch
                     </div>
                     <div className="shopping__cart-product-col col l-1">
                         <div className="shopping__cart-product-checkbox">
-                            <input type="checkbox" checked={checkedAll} />
+                            <input onChange={()=>handleChecked(cart.id)} type="checkbox" checked={cart.checked}  />
                         </div>
                     </div>
                 </div>

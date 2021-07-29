@@ -7,12 +7,15 @@ import Footer from './../../components/Footer';
 import Header from './../../components/Header';
 import ProductInShoppingCart from './ProductInShoppingCart';
 import { useSelector, useDispatch } from 'react-redux';
-import { deleteItemIntoCart, incrementItemInShoppingCart, decrementItemInShoppingCart   } from '../../redux/actions/productAction'
+import { deleteItemIntoCart, 
+    incrementItemInShoppingCart, 
+    decrementItemInShoppingCart,
+    checkAllItemShoppingCart   } from '../../redux/actions/productAction'
 const ShoppingCart = () => {
 
     const dispatch = useDispatch()
     const [total, setTotal] = useState(0)
-    const [checkedAll, setCheckedAll] = useState(false);
+    
     const Products = useSelector(state => state.allProducts.products);
     const Carts = useSelector(state => state.allCarts.carts)
 
@@ -45,8 +48,8 @@ const ShoppingCart = () => {
     }
 
     function handleCheckAll(e){
-        console.log(e.target.checked)
-        setCheckedAll(e.target.checked)
+        console.log('e')
+        dispatch(checkAllItemShoppingCart(e.target.checked))
     }
     
     return (
@@ -102,7 +105,7 @@ const ShoppingCart = () => {
                                                 onIncrement={id => onHandleIncrement(id)}
                                                 product={product} 
                                                 cart={cart} 
-                                                checkedAll={checkedAll}
+                                                
                                                 />
                                                
                                                 
