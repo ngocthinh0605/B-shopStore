@@ -1,0 +1,15 @@
+* {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  /* 16px
+  font-size: 100%; */
+  /* hack */
+  font-size: 62.5%;
+  line-height: 1.6rem;
+  box-sizing: border-box;
+  
+}

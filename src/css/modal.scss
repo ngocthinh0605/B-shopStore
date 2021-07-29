@@ -1,0 +1,130 @@
+.modal{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    .modal__overlay{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+    .modal__body{
+        
+        margin:auto;
+        z-index: 2;
+        border-radius: 5px;
+        
+        .modal__inner{
+            background-color:white;
+            height:500px;
+           
+            .auth-form{
+
+                background-image: url('../image/backgroundLogin.jpg');
+                height:100%;
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                position: relative;
+                .auth-form__container{
+                    height: 500px;
+                    width: 100%;
+                    position: relative;
+                    overflow: hidden;
+                    .auth-form__container-form{
+                        background-color: white;
+                        position: absolute;
+                        height: 100%;
+                        width: 100%;
+                        transition: 1s all;
+                        z-index: 2;
+                        img{
+                            object-fit: cover;
+                            height: 100%;
+                            width: 100%;
+                        }
+                        
+                    }
+
+                    .auth-form__container-exit{
+                        z-index: 2;
+                        position: absolute;
+                        top: -20px;
+                        right: -22px;
+                        cursor: pointer;
+                        padding: 20px 27px;
+                        border-radius: 29%;
+                        background-color: white;
+                        i{
+                            color: #6e6a6a;
+                            font-size: 4rem;
+                            
+                        }
+                        i:hover {
+                            opacity: 0.7;
+                        }
+                    }
+
+                    
+                    
+
+                    .auth-form__left{
+                        display:flex;
+
+                        .auth-form__left-wrap{
+                            margin:auto;
+                            font-size: 1.6rem;
+                            text-align: center;
+                            
+                            h1{
+                                margin: 50px 0;
+                                color:white;
+                            }
+                            span{
+                                padding:5px 30px;
+                                font-weight: 600;
+                                font-size: 2rem;
+                                border:1px solid #ccc;
+                                border-radius: 15px;
+                                color:white;
+                                cursor: pointer;
+                                z-index: 1;
+                            }
+                            span:hover{
+                                background-color: #ccc;
+                                color:black;
+                            }
+                        }
+                        
+                        
+                    }
+                    .auth-form__right{
+                        display:flex;
+
+                        span{
+                            padding:5px 15px;
+                            font-size: 1.6rem;
+                            border:1px solid #ccc;
+                            border-radius: 15px;
+                            color:white;
+                            margin:auto;
+                            cursor: pointer;
+                            z-index: 1;
+
+                        }
+                        span:hover{
+                            background-color: #ccc;
+                        }
+                    }
+                    
+                }
+                
+            }
+            
+        }
+    }
+}

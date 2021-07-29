@@ -1,0 +1,194 @@
+
+.banner__full__creen{
+    position: relative;
+    height: 100vh;
+    background-image: url('../image/background.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: auto;
+}
+.banner{
+    color: white;
+}
+.banner__infor{
+    margin-top: 200px;
+}
+
+.banner__infor-top{
+    margin-top: 50px;
+}
+
+.banner__infor-top span{
+    font-size:5rem;
+
+}
+.banner__infor-bottom{
+    margin-top: 50px;
+}
+.banner__infor-bottom span{
+    font-size: 3rem;
+}
+.banner__btn{
+    margin-top: 50px;
+    cursor: pointer;
+    position: relative;
+}
+
+
+.banner__btn span{
+    color:black;
+    border: 1px solid rgb(255, 255, 255);
+    padding: 20px 100px;
+    background-color:rgb(255, 255, 255);
+    border-radius: 4px;
+    font-size: 2rem;
+    font-weight: 700;  
+    box-shadow: 0px 0px 12px 1px rgb(255 255 255 / 75%);
+    transition: .6s ease-out;
+
+}
+.banner__btn span:hover{
+    background-color: rgb(28, 28, 250);
+    color: white;
+
+}
+
+.container{
+    background-color:rgb(0, 0, 0);
+    padding-top: 25px;
+    padding-bottom: 50px;
+}
+.main__brembo{
+    margin-top: 25px;
+    border-radius: 4px;
+    background-color:#a9a4aa;
+    box-shadow: 6px 6px 6px 5px rgb(255 255 255 / 75%);
+}
+.brembo__img img{ 
+    margin-top: 4px;
+    border-radius: 10px;
+    width:100%;
+    transition: .6s ease-out;
+    cursor: pointer;
+    padding: 5px;
+}
+.brembo__img img:hover{
+    transform: translateY(-15px);
+}
+.brembo__info{
+    color: white;
+    margin-top: 100px;
+}
+.brembo__info h1{
+    font-size:4.5rem;
+
+}
+.brembo__info p{
+    line-height: 5rem;
+    margin-top: 30px;
+    font-size:2.5rem
+}
+
+.see-more{
+    text-decoration: none;
+    margin-top: 15px;
+    font-size:3rem;
+    font-weight: 600;
+    color: rgb(250, 250, 66);
+    cursor: pointer;
+}
+.see-more:hover{
+    opacity: 0.5;
+}
+
+.main_akrapovic{
+    margin-top: 30px;
+}
+.akrapovic{
+    padding: 0 10px;
+    color: white;
+}
+.akrapovic_img img{
+    width: 100%;
+    cursor: pointer;
+}
+.akramovic_infor h1{
+    margin-top: 150px;
+    font-size: 2.8rem;
+    line-height:2.5rem;
+
+
+}
+.akramovic_infor p{
+    margin-top: 20px;
+    font-size:2rem;
+    line-height:3rem;
+}
+.avg__content{
+    overflow:hidden;
+    width: 100%;
+}
+.agv__slides{
+    display:flex;
+    transition: 1s all;
+    cursor: pointer;
+}
+.agv__slide{
+    margin-right: 15px;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+.agv_items{
+    margin-right: 10px;
+    text-decoration: none;
+}
+.agv__item-infor{
+    margin-top: 100px;
+}
+.agv__item-infor img{
+    width: 100%;
+    border-radius: 2px;
+}
+
+.agv__item-infor h1,b{
+    margin-top: 15px;
+    color: white;
+    text-align: center;
+}
+.agv__item-infor p {
+    margin-top: 15px;
+    font-size: 1.8rem;
+    color: white;
+}
+.agv__seemore{
+    color:yellow;
+    cursor: pointer;
+    margin-top: 15px;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.agv__wrap{
+    border-radius:1px;
+    border: 1px solid black;
+    box-shadow: 0px 7px 7px rgb(255 255 255 / 50%);
+    transition: .6s ease-out;
+    cursor: pointer;
+    padding:10px;
+}
+
+.agv__wrap h1{
+    height: 3.2rem;
+    overflow:hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+.agv__wrap:hover{
+    transform: translateY(-15px);
+}
+
