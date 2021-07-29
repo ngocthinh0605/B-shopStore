@@ -12,6 +12,7 @@ const ShoppingCart = () => {
 
     const dispatch = useDispatch()
     const [total, setTotal] = useState(0)
+    const [checkedAll, setCheckedAll] = useState(false);
     const Products = useSelector(state => state.allProducts.products);
     const Carts = useSelector(state => state.allCarts.carts)
 
@@ -41,6 +42,11 @@ const ShoppingCart = () => {
     function onHandleIncrement(id){
         console.log('increment', id)
         dispatch(incrementItemInShoppingCart(id))
+    }
+
+    function handleCheckAll(e){
+        console.log(e.target.checked)
+        setCheckedAll(e.target.checked)
     }
     
     return (
@@ -80,7 +86,7 @@ const ShoppingCart = () => {
                                         </div>
                                         <div className="shopping__cart-main-checkall col l-1">
                                             <div>Check All</div> 
-                                            <input type="checkbox" name="checkall"/>
+                                            <input onChange={e => handleCheckAll(e)} type="checkbox" name="checkall"/>
                                         </div>
                                     </div>
                                 </div>
@@ -95,7 +101,11 @@ const ShoppingCart = () => {
                                                 onDecrement={id => onHandleDecrement(id)}
                                                 onIncrement={id => onHandleIncrement(id)}
                                                 product={product} 
-                                                cart={cart} />
+                                                cart={cart} 
+                                                checkedAll={checkedAll}
+                                                />
+                                               
+                                                
                                         })
                                     }
                                     {/* <ProductInCart */}

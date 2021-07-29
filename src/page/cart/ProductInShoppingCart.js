@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 
-const ProductInShoppingCart = ({onDelete,product,cart,onDecrement,onIncrement}) => {
+const ProductInShoppingCart = ({onDelete,product,cart,onDecrement,onIncrement,checkedAll}) => {
     return (
         <>
             <div className="shopping__cart-item">
@@ -66,7 +66,7 @@ const ProductInShoppingCart = ({onDelete,product,cart,onDecrement,onIncrement}) 
                     </div>
                     <div className="shopping__cart-product-col col l-1">
                         <div className="shopping__cart-product-checkbox">
-                            <input type="checkbox" />
+                            <input type="checkbox" checked={checkedAll} />
                         </div>
                     </div>
                 </div>
