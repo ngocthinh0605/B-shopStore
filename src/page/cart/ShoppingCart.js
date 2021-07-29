@@ -26,9 +26,20 @@ const ShoppingCart = () => {
 
     useEffect(() => {
         var totalPrice = 0;
-
-        const priceOfitems = document.querySelectorAll('.shopping__cart-product-price span');
-        priceOfitems.forEach(item => totalPrice += parseInt(item.innerText))
+        const a = Carts.filter(cart=> cart.checked && cart)
+        console.log(a)
+        // const priceOfitems = document.querySelectorAll('.shopping__cart-product-price span');
+        // priceOfitems.forEach(item => totalPrice += parseInt(item.innerText))
+        a.forEach(cart => {
+            Products.forEach(product=>{
+                if(product.id == cart.idProduct){
+                    console.log(product.price)
+                    var price = product.price * cart.quantity;
+                    // console.log(price);
+                    totalPrice += parseInt(price)
+                }
+            })
+        })
         setTotal(totalPrice);
     },[Carts])
 
