@@ -75,8 +75,12 @@ const ShoppingCart = () => {
                                         <div className="col l-2">
                                             Shipping Cost
                                         </div>
-                                        <div className="col l-2">
+                                        <div className="col l-1">
                                             Price
+                                        </div>
+                                        <div className="shopping__cart-main-checkall col l-1">
+                                            <div>Check All</div> 
+                                            <input type="checkbox" name="checkall"/>
                                         </div>
                                     </div>
                                 </div>

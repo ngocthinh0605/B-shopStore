@@ -42,7 +42,6 @@ const Modal = ({handleModalClick}) => {
                                         {
                                             login === 'login' ? <Login /> : <Register/>
                                         }
-                                        
                                     </div>
                                     <div onClick={handleModalClick} className="auth-form__container-exit">
                                             <i class="fas fa-times"></i>

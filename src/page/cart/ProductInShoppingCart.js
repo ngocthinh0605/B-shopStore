@@ -59,9 +59,14 @@ const ProductInShoppingCart = ({onDelete,product,cart,onDecrement,onIncrement}) 
                             </div>
                         </div>
                     </div>
-                    <div className="shopping__cart-product-col col l-2">
+                    <div className="shopping__cart-product-col col l-1">
                         <div className="shopping__cart-product-price">
                             $<span>{cart.quantity  *  product.price}</span>
+                        </div>
+                    </div>
+                    <div className="shopping__cart-product-col col l-1">
+                        <div className="shopping__cart-product-checkbox">
+                            <input type="checkbox" />
                         </div>
                     </div>
                 </div>

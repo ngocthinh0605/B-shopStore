@@ -284,3 +284,6 @@
     pointer-events: none;
     opacity: 0.4;
 }
+.shopping__cart-main-checkall{
+    text-align: center;
+}
