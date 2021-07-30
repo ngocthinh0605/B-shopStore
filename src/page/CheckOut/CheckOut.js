@@ -4,7 +4,6 @@ import Header from '../../components/Header'
 import '../../css/checkout.scss'
 import '../../Grid.css'
 
-import img from '../../image/emptycart.png'
 import ItemInCheckOut from './ItemInCheckOut'
 import { useSelector } from 'react-redux';
 
