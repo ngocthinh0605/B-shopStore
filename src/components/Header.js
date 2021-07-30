@@ -3,7 +3,7 @@ import '../css/header.css'
 import '../Grid.css'
 import emptycart from '../image/emptycart.png'
 import {Link} from 'react-router-dom'
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import CartItem from './CartItem';
 import { useSelector, useDispatch } from 'react-redux';
@@ -30,11 +30,13 @@ const Header = ({active, searchProduct}) => {
         setSearch(value);
         
     }
-    window.addEventListener('scroll', () =>{
-        const header = document.querySelector('.header');
-        header.classList.toggle("sticky",window.scrollY > 0);
-    })
 
+    useEffect(() => {
+        window.addEventListener('scroll', (e) =>{
+            const header = document.querySelector('.header');
+            header.classList.toggle("sticky",window.scrollY > 0);
+        })
+    },[])
     function handleDeleteItem(id){
         dispatch(deleteItemIntoCart(id))
 
@@ -47,11 +49,11 @@ const Header = ({active, searchProduct}) => {
     return (
 
     <>
-        <div className='header grid'>
+        {/* <div className='header grid'> */}
         {
             modal && <Modal handleModalClick={handleModalClick}/>
         }
-            <div className='.header-fixed'>
+            <div className='header-fixed'>
                 <div className="header__top gird">
                     <div className=" grid wide">
                             <div className="header__top-nav">
@@ -136,7 +138,7 @@ const Header = ({active, searchProduct}) => {
                     </div>
                 </div>
             </div>
-        </div>
+        {/* </div> */}
     </>
     )
 }

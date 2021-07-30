@@ -5,6 +5,8 @@ import { BrowserRouter  as Router, Route, Switch } from 'react-router-dom';
 import ScrollToTop from './components/ScrollToTop';
 import ProductDetail from './page/ProductDetail/ProductDetail';
 import ShoppingCart from './page/cart/ShoppingCart';
+import CheckOut from './page/CheckOut/CheckOut';
+import Header from './components/Header';
 
 
 function App() {
@@ -24,6 +26,9 @@ function App() {
           </Route>
           <Route exact path='/shoppingcart'>
             <ShoppingCart />
+          </Route>
+          <Route exact path='/checkout'>
+            <CheckOut />
           </Route>
         </Switch>
         {/* <ProductDetail/> */}

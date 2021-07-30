@@ -26,14 +26,13 @@ const ShoppingCart = () => {
 
     useEffect(() => {
         var totalPrice = 0;
-        const a = Carts.filter(cart=> cart.checked && cart)
-        console.log(a)
+        const allCartChecked = Carts.filter(cart=> cart.checked && cart)//get all carts are checked 
+        
         // const priceOfitems = document.querySelectorAll('.shopping__cart-product-price span');
         // priceOfitems.forEach(item => totalPrice += parseInt(item.innerText))
-        a.forEach(cart => {
+        allCartChecked.forEach(cart => {
             Products.forEach(product=>{
                 if(product.id == cart.idProduct){
-                    console.log(product.price)
                     var price = product.price * cart.quantity;
                     // console.log(price);
                     totalPrice += parseInt(price)
@@ -53,20 +52,32 @@ const ShoppingCart = () => {
 
         dispatch(decrementItemInShoppingCart(id))
     }
+    
     function onHandleIncrement(id){
-        console.log('increment', id)
         dispatch(incrementItemInShoppingCart(id))
     }
 
     function handleCheckAll(e){
-        console.log('e')
         dispatch(checkAllItemShoppingCart(e.target.checked))
     }
+
+    //handle checkout items
+    // function handleCheckOut() { 
+
+    //     console.log('123')
+
+    //     const itemsCheckOut = Carts.filter(cart => cart.checked)
+    //     console.log(itemsCheckOut)
+        
+    // }
     
     return (
         <>
-            <Header 
-                searchProduct = {(e) => handleSearch(e)}/>
+            <div className='header grid'>
+                <Header 
+                    searchProduct = {(e) => handleSearch(e)}
+                />    
+            </div>  
             <div className="grid">
                 <div className="shopping__cart-wrap-header"></div>
                 <div className="shoppingcart__content">
@@ -117,9 +128,7 @@ const ShoppingCart = () => {
                                                 product={product} 
                                                 cart={cart} 
                                                 
-                                                />
-                                               
-                                                
+                                                />  
                                         })
                                     }
                                     {/* <ProductInCart */}
@@ -162,18 +171,14 @@ const ShoppingCart = () => {
                                     <div className="shopping__cart-pay-total">
                                        <span>${total}</span>
                                     </div>
-
-                                    
                                 </div>
 
                             </div>
                             <div className="row">
                                 <div className="col l-9"></div>
-                                <div className={ `${total <= 0 ? 'shopping__cart-pay-disableCheckOut' : 'shopping__cart-pay-checkout'}     col l-3`}>
-                                {/*   */}
+                                <Link to="/checkout" className={ `${total <= 0 ? 'shopping__cart-pay-disableCheckOut' : 'shopping__cart-pay-checkout'} col l-3`}>
                                     <span>CheckOut</span>
-                                </div>
-
+                                </Link>
                             </div>
                         </div>
                     </div>

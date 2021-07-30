@@ -39,11 +39,12 @@ const Home = ({active}) => {
 
     return (
         <>
-            
-            <Header 
-                active={active}
-                searchProduct = {(e) => handleSearch(e)}
-            />       
+             <div className='header grid'>
+                <Header 
+                    active={active}
+                    searchProduct = {(e) => handleSearch(e)}
+                />    
+            </div>   
             <div className="banner__full__creen"> 
                 <div className="grid wide">
                     <div className="banner">

@@ -10,7 +10,7 @@ const ProductInShoppingCart = ({onDelete,product,cart,onDecrement,onIncrement,})
 
     function handleChecked(id){
         const unCheckAll = document.querySelector('.shopping__cart-main-checkall input[name = "checkall"]')
-        unCheckAll.checked = false;
+        unCheckAll.checked = false; 
         dispatch(checkedItemShoppingcart(id))
     }
    

@@ -237,6 +237,7 @@
     font-weight: 700;
     color: #f8f8f8;
     cursor: pointer;
+    text-decoration: none;
 
 }
 .shopping__cart-pay-checkout:hover{

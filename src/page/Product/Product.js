@@ -23,10 +23,12 @@ const Product = ({active}) => {
     }    
     return (
         <>
-            <Header 
-                active={active}
-                searchProduct = {(e) => handleSearch(e)}
-            />
+            <div className='header grid'>
+                <Header 
+                    active={active}
+                    searchProduct = {(e) => handleSearch(e)}
+                />    
+            </div>  
             <div className="grid">
                 <div className="product__content">
                     <div className="grid wide">

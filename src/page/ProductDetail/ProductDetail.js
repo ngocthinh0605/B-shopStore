@@ -31,7 +31,6 @@ const ProductDetail = () => {
 
         }
 
-
         // add a product was into cart
         const cartDuplicate ={
             id:0,
@@ -70,24 +69,25 @@ const ProductDetail = () => {
 
         })
         console.log('new' ,newItemCart ,cartDuplicate)
-        if(boleanDuplicateIdProduct){
+        if(boleanDuplicateIdProduct){ 
+            // when an item was in cart bag
             document.querySelector('.product__detail-notify').style.display = 'block';
             dispatch(editQuatityCartDuplicate(cartDuplicate))
         }else{
+            //when item is not in cart bag
             document.querySelector('.product__detail-notify').style.display = 'block';
             dispatch(addProductIntoCart(newItemCart))
         }
         
-        
-        
-        // dispatch(addProductIntoCart(cart))
     }
     
     return (
         <>
-            <Header
-                searchProduct = {(e) => handleSearch(e)}
-            />
+            <div className='header grid'>
+                <Header 
+                    searchProduct = {(e) => handleSearch(e)}
+                />    
+            </div>  
             <div className="product__detail-full">
                 <div className="grid">
                     <div className="product__detail">
