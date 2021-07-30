@@ -1,34 +1,34 @@
 import { ActionTypes } from './../contant/action-types';
 const initialState ={
     carts:[
-        {
-            id:1,
-            idProduct:1,
-            quantity: 5,
-            price:200,
-            checked: false,
-        },
-        {
-            id:2,
-            idProduct:6,
-            quantity: 2,
-            price:200,
-            checked: true,
-        },
-        {
-            id:3,
-            idProduct:11,
-            quantity: 4,
-            price:200,
-            checked: true,
-        },
-        {
-            id:4,
-            idProduct:15,
-            quantity: 9,
-            price:200,
-            checked: false,
-        }
+        // {
+        //     id:1,
+        //     idProduct:1,
+        //     quantity: 5,
+        //     price:200,
+        //     checked: false,
+        // },
+        // {
+        //     id:2,
+        //     idProduct:6,
+        //     quantity: 2,
+        //     price:200,
+        //     checked: true,
+        // },
+        // {
+        //     id:3,
+        //     idProduct:11,
+        //     quantity: 4,
+        //     price:200,
+        //     checked: true,
+        // },
+        // {
+        //     id:4,
+        //     idProduct:15,
+        //     quantity: 9,
+        //     price:200,
+        //     checked: false,
+        // }
     ]
 }
 export const cartReducer =(state = initialState, {type, payload}) => {
