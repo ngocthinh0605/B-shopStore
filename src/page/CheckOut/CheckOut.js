@@ -67,7 +67,7 @@ const CheckOut = () => {
                                         <span>Price</span>
                                     </div>
                                     <div className="checkout__product-wrap col l-2">
-                                        <span>Quality</span>
+                                        <span>Quantity</span>
                                     </div>
                                     <div className="checkout__product-wrap col l-2"> 
                                         <span>Total</span>
