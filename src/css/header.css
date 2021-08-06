@@ -382,6 +382,7 @@
 
     .header__bar{
         display: block;
+        margin-right: 10px;
     }
     .header__bar i{
         font-size: 1.6rem;
