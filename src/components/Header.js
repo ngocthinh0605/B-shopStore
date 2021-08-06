@@ -93,7 +93,8 @@ const Header = ({active, searchProduct}) => {
             </div>
         </div>
         <div className="header__bottom ">
-            <div className="header__main grid wide ">
+        <div className="grid wide">
+            <div className="header__main">
                 <div className="header__main-left">
                     <Link to='/' className="header__main-logo">B-Sport</Link>
                     <div className="header__main-search">
@@ -186,6 +187,8 @@ const Header = ({active, searchProduct}) => {
                 </div>
                 
             </div>
+            
+        </div>
         </div>
     </>
     )

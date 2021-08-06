@@ -95,11 +95,11 @@
     display: flex;
     color: white;
     align-items: center;
-    justify-content: space-between;
     margin-top: 15px;
 }
 .header__main-left{
     display: flex;
+    justify-content: space-around;
     align-items: center;
 }
 .header__main-search{
@@ -353,12 +353,16 @@
 }
 @media (max-width: 740px) {
 
+    .header__main{
+        display:flex;
+        justify-content: space-around;
+    }
     .header__main-left{
         display:flex;
-        justify-content: space-between;
         align-items: center;
+        justify-content: space-around;
         margin-right: 10px;
-    margin-left: 10px;
+        margin-left: 10px;
     }
     .header__main-navbar{
         position: absolute;
@@ -399,7 +403,7 @@
     }
     .header__main-search{
         margin-left: 15px;
-        flex: 2;
+        flex: 1;
 
     }
     .header__seach-icon i{
@@ -442,6 +446,7 @@
     {
         color: rgb(0, 0, 0);
         font-size: 1.6rem;
+        flex: 1;
 
     }
 
