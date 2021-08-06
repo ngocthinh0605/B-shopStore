@@ -334,7 +334,17 @@
         margin:auto;
 
     }
+    .shopping__cart-product-price span{
+        font-size: 2rem;
+    }
     .shopping__cart-product-checkbox{
         margin:auto;
+    }
+
+    .checkout__content-title{
+        display: flex;
+    }
+    .checkout__content-title h3{
+        margin: auto;
     }
 }

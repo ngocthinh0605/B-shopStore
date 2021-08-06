@@ -191,6 +191,10 @@
     .checkout__total {
         .checkout__total-header{
             margin-bottom: 15px;
+            display: flex;
+            h2{
+                margin: auto;
+            }
         }
         .checkout__total-change-pay{
             margin-top: 15px;
