@@ -192,3 +192,35 @@
     transform: translateY(-15px);
 }
 
+@media (max-width: 740px){
+    .banner__infor-top span{
+        font-size: 3rem;
+    }
+    .banner__infor-bottom span{
+        font-size: 2.5rem;
+    }
+
+    .banner__btn {
+        display: flex;
+    }
+    .banner__btn span{
+        margin:auto;
+    }
+    .brembo__info h1{
+        font-size: 2rem;
+    }
+
+    .brembo__info p{
+        font-size: 1.8rem;
+        line-height:1.8rem;
+    }
+
+    .see-more{
+        font-size: 2rem;
+        display:flex;
+    }
+    .see-more p{
+        margin: auto;
+    }
+}
+

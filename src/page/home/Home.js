@@ -72,7 +72,7 @@ const Home = ({active}) => {
                                     <div className="brembo__img col l-4">
                                         <img src={bremo} alt="" />
                                     </div>
-                                    <div className="col l-8">
+                                    <div className="col l-8 c-12">
                                         <div className="brembo__info">
                                             <h1>ONLY BREMBO CAN STOP YOU</h1>
                                             <p>Chosen from the best manufacturers</p>
@@ -88,21 +88,21 @@ const Home = ({active}) => {
                             </div>
                             <div className="main_akrapovic">
                                 <div className=" akrapovic row">
-                                    <div className="akramovic_infor col l-4">
+                                    <div className="akramovic_infor col l-4 c-12">
                                         <h1>Akrapovic exhaust car Carbon</h1>
                                         <p>An exhaust system looks simple at first glance. But a closer look shows that it is a complex system that has a significant effect on the performance of a racing or a regular sports car</p>
                                         <Link to="/product" className="see-more">
                                             <p>See More.....</p>
                                         </Link>
                                     </div>
-                                    <div className="akrapovic_img col l-8">
+                                    <div className="akrapovic_img col l-8 c-12">
                                         <img src={agv} alt="" />
                                     </div>
                                 </div>
                             </div>
                             <div className="main__agv">
                                 <div className="agv row">
-                                    <div className="avg__content col l-4">
+                                    <div className="avg__content col l-4 c-12">
                                         <div className="agv__slides">
                                             <img src={slide3} alt="" className="agv__slide" />
                                             <img src={slide2} alt="" className="agv__slide" />

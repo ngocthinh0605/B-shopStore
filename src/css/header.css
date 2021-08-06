@@ -340,5 +340,112 @@
     cursor: pointer;
     opacity: 0.9;
 }
+.header__bar{
+    display: none;
+}
 
+.header__bottom{
+    margin-top: 15px;
+}
 
+.header__nav-item-wrap-cart.header__car-navbars{
+    display: none;
+}
+@media (max-width: 740px) {
+
+    .header__main-left{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .header__main-navbar{
+        position: absolute;
+        flex-direction: column;
+        height: 100vh;
+        width: 50%;
+        top: 0;
+        right: 0;
+        background-color: rgb(255, 255, 255);
+        transition: transform 0.6s linear;
+        transform: translateX(100%);
+        z-index: 1;
+        font-weight: 600;
+    }
+    .header__nav-item{
+        color: black;
+        margin-top: 15px;
+
+    }
+    .header__main-navbar .header__nav-item-wrap-cart{
+        display: none;
+    }
+
+    .header__bar{
+        display: block;
+    }
+    .header__bar i{
+        font-size: 1.6rem;
+    }
+
+    .header__nav-item-wrap-cart{
+        font-size: 1.6rem;
+        /* margin-right: 10px; */
+    }
+    .header__main-logo{
+        font-size: 2rem;
+    }
+    .header__main-search{
+        margin-left: 15px;
+    }
+    .header__seach-icon i{
+        font-size: 1.6rem
+    }
+    .header__search-input input{
+        font-size: 1.6rem;
+    }
+
+    .header__search-input{
+
+    }
+
+    .header__nav-item-wrap-cart.header__car-navbars{
+        display: block;
+    }
+
+    .header__bars-modal{
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color:rgba(0, 0, 0,0.4);
+        display: none;
+        
+    }
+
+    .sticky .header__top-nav,
+    .sticky .header__main,
+    .sticky .header__nav-item,
+    .sticky .header__nav-item-cart,
+    .sticky .header__nav-item-cart-wrap,
+    .sticky .header__main-logo,
+
+    .sticky .header__search-input input
+    {
+        color: rgb(0, 0, 0);
+        font-size: 1.65rem;
+
+    }
+
+    .sticky .header_number_item_cart{
+        border: 1px solid rgb(0, 0, 0);
+        box-shadow: 0px 0 4px 0px rgb(0, 0, 0,0.75);
+
+    }
+    .sticky .header__cart-item-description{
+        font-size: 1.6rem;
+        font-weight:400
+    }
+    
+   
+}
