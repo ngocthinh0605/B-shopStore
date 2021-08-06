@@ -89,13 +89,13 @@ const ProductDetail = () => {
                 />    
             </div>  
             <div className="product__detail-full">
-                <div className="grid">
+                <div className="grid wide">
                     <div className="product__detail">
                         <div className="grid wide">
                             <div className="product__detail-content">
                                 <div className="product__detail-wrap">
                                     <div className="  row no-gutters">
-                                        <div className="col l-6">
+                                        <div className="col l-6 c-12">
                                             <div className="product__detail-left">
                                                 <div>
                                                     <h1>{product[0].title}</h1>
@@ -104,7 +104,7 @@ const ProductDetail = () => {
                                                     <h5>The precision of every part, the ecstasy of materials. Performance that excites while it seduces. The obsession is overcoming the limits of one's imagination,</h5>
                                                 </div>
                                                 <div className="product__detail-price">
-                                                    <span>${product[0].price}</span>
+                                                    <span>Price: ${product[0].price}</span>
                                                 </div>
                                                 <div className="product__detail-addcart">
                                                     <button onClick={handleAddItemIntoCart} >ADD TO CART</button>
@@ -115,7 +115,7 @@ const ProductDetail = () => {
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className="col l-6">
+                                        <div className="col l-6 c-12">
                                             <div className="product__detail-right">
                                                 <img src={product[0].image} alt="" />
                                             </div>
@@ -143,7 +143,7 @@ const ProductDetail = () => {
                                             {
                                                 Products.filter(productf => productf.category === product[0].category && productf)
                                                 .map(product => 
-                                                    <div className="col l-3">
+                                                    <div className="col l-3 c-6">
                                                         <ProductItem
                                                             id={product.id}
                                                             image={product.image}
