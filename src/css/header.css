@@ -372,7 +372,7 @@
         top: 0;
         right: 0;
         background-color: rgba(0, 0, 0,0.9);
-        transition: transform 0.6s linear;
+        transition: transform 0.3s linear;
         transform: translateX(100%);
         z-index: 1;
         font-weight: 600;
