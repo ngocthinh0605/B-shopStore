@@ -197,6 +197,6 @@
         color: red;
     }
     .product__detail-content{
-        padding:0;
+        padding:0 0 50px;
     }
 }
