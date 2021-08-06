@@ -393,9 +393,12 @@
     }
     .header__main-logo{
         font-size: 2rem;
+        flex: 1;
     }
     .header__main-search{
         margin-left: 15px;
+        flex: 1;
+
     }
     .header__seach-icon i{
         font-size: 1.6rem
@@ -410,6 +413,8 @@
 
     .header__nav-item-wrap-cart.header__car-navbars{
         display: block;
+        margin-right: 10px;
+
     }
 
     .header__bars-modal{
