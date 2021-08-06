@@ -81,7 +81,7 @@ const Product = ({active}) => {
                                                 }
                                             })
                                             .map((product)=>
-                                                <div className="col l-3">
+                                                <div className="col l-3 c-6">
                                                     <ProductItem
                                                         key={product.id}
                                                         id  ={product.id}
