@@ -4,7 +4,6 @@ import Header from '../../components/Header'
 import '../../css/checkout.scss'
 import '../../Grid.css'
 
-import img from '../../image/emptycart.png'
 import ItemInCheckOut from './ItemInCheckOut'
 import { useSelector } from 'react-redux';
 
@@ -68,7 +67,7 @@ const CheckOut = () => {
                                         <span>Price</span>
                                     </div>
                                     <div className="checkout__product-wrap col l-2">
-                                        <span>Quality</span>
+                                        <span>Quantity</span>
                                     </div>
                                     <div className="checkout__product-wrap col l-2"> 
                                         <span>Total</span>
