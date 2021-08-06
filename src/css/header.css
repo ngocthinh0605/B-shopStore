@@ -94,6 +94,7 @@
 .header__main {
     display: flex;
     color: white;
+    justify-content:space-between;
     align-items: center;
     margin-top: 15px;
 }
@@ -360,7 +361,7 @@
     .header__main-left{
         display:flex;
         align-items: center;
-        justify-content: space-around;
+        justify-content: space-between;
         margin-right: 10px;
         margin-left: 10px;
     }
@@ -411,6 +412,7 @@
     }
     .header__search-input input{
         font-size: 1.6rem;
+        width: 150px;
     }
 
     .header__search-input{
