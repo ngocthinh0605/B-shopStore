@@ -357,6 +357,8 @@
         display:flex;
         justify-content: space-between;
         align-items: center;
+        margin-right: 10px;
+    margin-left: 10px;
     }
     .header__main-navbar{
         position: absolute;
@@ -382,7 +384,6 @@
 
     .header__bar{
         display: block;
-        margin-right: 10px;
     }
     .header__bar i{
         font-size: 1.6rem;
