@@ -139,7 +139,7 @@ const ShoppingCart = () => {
                                 </div>
                             </div>
                             <div className="shopping__cart-pay row">
-                                <div className="shopping__cart-pay-left col l-9">
+                                <div className="shopping__cart-pay-left col l-9 c-12">
                                     <div className="shopping__cart-pay-left-heading">Accept payment options</div>
                                     <div className="shopping__cart-pay-left-continue">
                                         <Link to="/product">
@@ -149,7 +149,7 @@ const ShoppingCart = () => {
                                         </Link>
                                     </div>
                                 </div>
-                                <div className="shopping__cart-pay-right col l-2">
+                                <div className="shopping__cart-pay-right col l-2 c-6">
                                     <div className="shopping__cart-pay-subtotal">
                                         Subtotal: 
                                     </div>
@@ -161,7 +161,7 @@ const ShoppingCart = () => {
                                         Total:
                                     </div>
                                 </div>
-                                <div className="shopping__cart-pay-right col l-1">
+                                <div className="shopping__cart-pay-right col l-1 c-6">
                                     <div className="shopping__cart-pay-subtotal">
                                         <span>${total}</span>
                                     </div>
@@ -175,8 +175,8 @@ const ShoppingCart = () => {
 
                             </div>
                             <div className="row">
-                                <div className="col l-9"></div>
-                                <Link to="/checkout" className={ `${total <= 0 ? 'shopping__cart-pay-disableCheckOut' : 'shopping__cart-pay-checkout'} col l-3`}>
+                                <div className="col l-9 c-12"></div>
+                                <Link to="/checkout" className={ `${total <= 0 ? 'shopping__cart-pay-disableCheckOut' : 'shopping__cart-pay-checkout'} col l-3 c-12`}>
                                     <span>CheckOut</span>
                                 </Link>
                             </div>

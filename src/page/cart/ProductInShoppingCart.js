@@ -36,7 +36,7 @@ const ProductInShoppingCart = ({onDelete,product,cart,onDecrement,onIncrement,})
                             </div>
                         </div>
                     </div>
-                    <div className="shopping__cart-product-col col l-2">
+                    <div className="shopping__cart-product-col col l-2 c-12">
                         <div className="shopping__cart-product-attributes-wrap">
                             <div className="shopping__cart-product-attributes">
                                 Color: <span>Black</span>
@@ -46,7 +46,7 @@ const ProductInShoppingCart = ({onDelete,product,cart,onDecrement,onIncrement,})
                             </div>
                         </div>
                     </div>
-                    <div className="shopping__cart-product-col col l-2">
+                    <div className="shopping__cart-product-col col l-2 c-12 ">
                         <div className="shopping__cart-product-quantity">
                             <div className="shopping__cart-product-quantity-wrap">
                                 <div  onClick={() => onDecrement(cart.id)} className={`shopping__cart-product-quantity-count ${cart.quantity === 0 && 'shopping__cart--disable'} `}>
@@ -61,7 +61,7 @@ const ProductInShoppingCart = ({onDelete,product,cart,onDecrement,onIncrement,})
                             </div>
                         </div>
                     </div>
-                    <div className=" shopping__cart-product-col col l-2">
+                    <div className=" shopping__cart-product-col col l-2 c-12">
                         <div className="shopping__cart-product-shopping-cost">
                             <div className="shopping__cart-product-shopping-cost-name">
                                 
@@ -71,12 +71,12 @@ const ProductInShoppingCart = ({onDelete,product,cart,onDecrement,onIncrement,})
                             </div>
                         </div>
                     </div>
-                    <div className="shopping__cart-product-col col l-1">
+                    <div className="shopping__cart-product-col col l-1 c-12">
                         <div className="shopping__cart-product-price">
                             $<span>{ cart.quantity  *  product.price}</span>
                         </div>
                     </div>
-                    <div className="shopping__cart-product-col col l-1">
+                    <div className="shopping__cart-product-col col l-1 c-12">
                         <div className="shopping__cart-product-checkbox">
                             <input onChange={()=>handleChecked(cart.id)} type="checkbox" checked={cart.checked}  />
                         </div>
