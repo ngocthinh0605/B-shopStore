@@ -196,5 +196,7 @@
         font-size: 2.5rem;
         color: red;
     }
-
+    .product__detail-content{
+        padding:0;
+    }
 }
