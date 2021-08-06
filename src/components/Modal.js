@@ -49,17 +49,17 @@ const Modal = ({handleModalClick}) => {
                                     <div className="col l-6 auth-form__left">
                                         <div className="auth-form__left-wrap">
                                             <div className="auth-form__left-heading">
-                                                <h1>Create Account</h1>
+                                                <h1>You Have An Account</h1>
                                             </div>
-                                            <span onClick={handleLogout} className='auth-form__right-click'>Register</span>
+                                            <span onClick={handleLogout} className='auth-form__right-click'>Login</span>
                                         </div>
                                     </div>
                                     <div className="col l-6 auth-form__left">
                                         <div className="auth-form__left-wrap">
                                             <div className="auth-form__left-heading">
-                                                <h1>You Have An Account</h1>
+                                                <h1>Create Accoun</h1>
                                             </div>
-                                            <span onClick={handleLogin} className='auth-form__right-click'>Login</span>
+                                            <span onClick={handleLogin} className='auth-form__right-click'>Register</span>
                                         </div>
                                     </div>
                                 </div>
