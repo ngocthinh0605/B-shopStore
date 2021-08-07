@@ -1,6 +1,6 @@
 import React from 'react'
 import '../css/login.scss'
-const Login = () => {
+const Login = ({onChangeLoginToRegister}) => {
     return (
         <>
             <div className="login">
@@ -28,6 +28,7 @@ const Login = () => {
                     <div className="login__forgot-password">
                         <span>Lost Your Password?</span>
                     </div>
+                    <button onClick={onChangeLoginToRegister} className="login__btn-login btn-form-login-mobile">REGISTER</button>
 
                 </div>
             </div>

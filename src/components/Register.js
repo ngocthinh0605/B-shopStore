@@ -1,7 +1,7 @@
 import React from 'react'
 import '../css/login.scss'
 
-const Register = () => {
+const Register = ({onChangeRegisterToLogin}) => {
     return (
         <>
             <div className="login">
@@ -30,6 +30,8 @@ const Register = () => {
                     <div className="login__forgot-password">
                         <span>Lost Your Password?</span>
                     </div>
+
+                    <button onClick={onChangeRegisterToLogin} className="login__btn-login btn-form-login-mobile">Login</button>
 
                 </div>
             </div>

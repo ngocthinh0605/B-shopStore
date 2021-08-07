@@ -20,7 +20,6 @@
         
         .modal__inner{
             background-color:white;
-            height:500px;
            
             .auth-form{
 
@@ -31,7 +30,7 @@
                 background-repeat: no-repeat;
                 position: relative;
                 .auth-form__container{
-                    height: 500px;
+                    height: 550px;
                     width: 100%;
                     position: relative;
                     overflow: hidden;
@@ -127,4 +126,14 @@
             
         }
     }
+}
+
+@media (max-width: 740px){
+    .auth-form__container-form{
+        transform: translateX(400px);
+    }
+    .btn-form-login-mobile{
+        display: block;
+    }
+  
 }
