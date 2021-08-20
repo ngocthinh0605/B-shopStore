@@ -147,7 +147,7 @@ const Header = ({active, searchProduct}) => {
                         <div onClick={handleModalBars} className="header__bars-modal"></div>
                 </div>
                 <div className="header__main-right">
-                    <div onClick={handleModalBars} className="header__main-navbar">
+                    <div className="header__main-navbar">
                         <Link to='/' className={`header__nav-item ${active === 'Home' && 'active' }`} >Home</Link>
                         <Link to='/product' className={`header__nav-item ${active === 'Product' && 'active' }`}>Product</Link>
                         <div className="header__nav-item">About Us</div>

@@ -266,6 +266,7 @@
 }
 
 .shopping__cart-pay-disableCheckOut{
+        text-decoration: none;
         position: relative;
         border:1px solid #ccc;
         margin-top: 15px;
